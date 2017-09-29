@@ -1,0 +1,10 @@
+c:\Users\thalu\Documents\Thales\Class\VS\crud_passageiro\obj\Debug\netcoreapp2.0\crud_passageiro.csproj.CoreCompileInputs.cache
+c:\Users\thalu\Documents\Thales\Class\VS\crud_passageiro\obj\Debug\netcoreapp2.0\crud_passageiro.AssemblyInfoInputs.cache
+c:\Users\thalu\Documents\Thales\Class\VS\crud_passageiro\obj\Debug\netcoreapp2.0\crud_passageiro.AssemblyInfo.cs
+c:\Users\thalu\Documents\Thales\Class\VS\crud_passageiro\bin\Debug\netcoreapp2.0\crud_passageiro.deps.json
+c:\Users\thalu\Documents\Thales\Class\VS\crud_passageiro\bin\Debug\netcoreapp2.0\crud_passageiro.runtimeconfig.json
+c:\Users\thalu\Documents\Thales\Class\VS\crud_passageiro\bin\Debug\netcoreapp2.0\crud_passageiro.runtimeconfig.dev.json
+c:\Users\thalu\Documents\Thales\Class\VS\crud_passageiro\bin\Debug\netcoreapp2.0\crud_passageiro.dll
+c:\Users\thalu\Documents\Thales\Class\VS\crud_passageiro\bin\Debug\netcoreapp2.0\crud_passageiro.pdb
+c:\Users\thalu\Documents\Thales\Class\VS\crud_passageiro\obj\Debug\netcoreapp2.0\crud_passageiro.dll
+c:\Users\thalu\Documents\Thales\Class\VS\crud_passageiro\obj\Debug\netcoreapp2.0\crud_passageiro.pdb

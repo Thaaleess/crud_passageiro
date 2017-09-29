@@ -1,0 +1,32 @@
+@model IEnumerable<crud_passageiro.Models.Passageiro>
+    
+<div class="container">
+    <h1>Lista de passageiros</h1>
+    <a class="btn btn-success" href="Passageiro/Create">Criar novo</a>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Cidade</th>
+                <th>Endereço</th>
+                <th>Funções</th>
+            </tr>
+            </tr>
+        </thead>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.nome</td>
+                <td>@item.cpf</td>
+                <td>@item.cidade</td>
+                <td>@item.endereco</td>
+                <td>
+                <a class="btn btn-primary" href="Passageiro/Edit/@item.id">Update</a>
+                <a class="btn btn-danger" onclick="return confirm('Você quer mesmo deletar esse passageiro?')" href="Passageiro/Delete/@item.id">Delete</a> </td>
+            </tr>
+        }
+    </table>
+</div>

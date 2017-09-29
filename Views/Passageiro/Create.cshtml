@@ -1,0 +1,30 @@
+@model crud_passageiro.Models.Passageiro
+
+<div class="container">
+    <div class="form-horizontal">
+        <form action="Create" method="Post">
+
+            <div class="form-group">
+                <label>ID</label>
+                <input class="form-control" type="text" name="id" />
+            </div>
+            <div class="form-group">
+                <label>Nome</label>
+                <input class="form-control" type="text" name="nome" />
+            </div>
+            <div class="form-group">
+                <label>CPF</label>
+                <input class="form-control" type="text" name="cpf" />
+            </div>
+            <div class="form-group">
+                <label>Cidade</label>
+                <input class="form-control" type="text" name="cidade" />
+            </div>
+            <div class="form-group">
+                <label>Endereço</label>
+                <input class="form-control" type="text" name="endereco" />
+            </div>
+            <input class="btn btn-primary" type="submit" value="Salvar" />
+        </form>
+    </div>
+</div>
