@@ -5,8 +5,12 @@ namespace crud_passageiro.Controllers
 {
     public class PassageiroController : Controller
     {
-        PassageiroRepository _repository = new PassageiroRepository();
+        private readonly IPassageiroRepository _repository;
 
+        public PassageiroController(IPassageiroRepository repository)
+        {
+            _repository = repository;
+        }
         public IActionResult Index(){
             var passageiros = _repository.GetAll();
             return View(passageiros);

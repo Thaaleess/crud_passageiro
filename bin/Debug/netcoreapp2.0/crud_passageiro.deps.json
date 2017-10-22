@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "a7aa306d2e264d92ffef06296341a5e29b6e41eb"
+    "signature": "10ad986637fef22858f63920353f6827cff712da"
   },
   "compilationOptions": {
     "defines": [
@@ -24,7 +24,11 @@
       "crud_passageiro/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.0",
-          "Microsoft.NETCore.App": "2.0.0"
+          "Microsoft.EntityFrameworkCore.Design": "2.0.0",
+          "Microsoft.EntityFrameworkCore.Tools.DotNet": "2.0.0",
+          "Microsoft.NETCore.App": "2.0.0",
+          "Pomelo.AspNetCore.Extensions": "2.0.0-preview2-CI10041",
+          "Pomelo.EntityFrameworkCore.MySql": "2.0.0"
         },
         "runtime": {
           "crud_passageiro.dll": {}
@@ -419,7 +423,7 @@
       "Microsoft.AspNetCore.Authentication.OAuth/2.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication": "2.0.0",
-          "Newtonsoft.Json": "10.0.1"
+          "Newtonsoft.Json": "10.0.3"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.OAuth.dll": {}
@@ -792,7 +796,7 @@
       "Microsoft.AspNetCore.JsonPatch/2.0.0": {
         "dependencies": {
           "Microsoft.CSharp": "4.4.0",
-          "Newtonsoft.Json": "10.0.1"
+          "Newtonsoft.Json": "10.0.3"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {}
@@ -1050,7 +1054,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.0.0",
           "Microsoft.Extensions.Logging.Console": "2.0.0",
-          "Newtonsoft.Json": "10.0.1"
+          "Newtonsoft.Json": "10.0.3"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.NodeServices.dll": {}
@@ -1355,7 +1359,7 @@
           "Microsoft.Rest.ClientRuntime": "2.3.8",
           "Microsoft.Rest.ClientRuntime.Azure": "3.3.7",
           "NETStandard.Library": "2.0.0",
-          "Newtonsoft.Json": "10.0.1",
+          "Newtonsoft.Json": "10.0.3",
           "System.Net.Http": "4.3.0"
         },
         "runtime": {
@@ -1369,7 +1373,7 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0",
           "NETStandard.Library": "2.0.0",
-          "Newtonsoft.Json": "10.0.1",
+          "Newtonsoft.Json": "10.0.3",
           "System.Collections": "4.3.0",
           "System.Collections.Concurrent": "4.3.0",
           "System.Linq": "4.3.0",
@@ -1659,6 +1663,18 @@
           "Microsoft.EntityFrameworkCore.Design": "2.0.0"
         }
       },
+      "Microsoft.EntityFrameworkCore.Tools.DotNet/2.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.App": "2.0.0",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/dotnet-ef.dll": {}
+        },
+        "compile": {
+          "lib/netcoreapp2.0/dotnet-ef.dll": {}
+        }
+      },
       "Microsoft.Extensions.Caching.Abstractions/2.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "2.0.0"
@@ -1806,7 +1822,7 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.0.0",
           "Microsoft.Extensions.Configuration.FileExtensions": "2.0.0",
-          "Newtonsoft.Json": "10.0.1"
+          "Newtonsoft.Json": "10.0.3"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
@@ -1861,7 +1877,7 @@
       "Microsoft.Extensions.DependencyModel/2.0.0": {
         "dependencies": {
           "Microsoft.DotNet.PlatformAbstractions": "2.0.0",
-          "Newtonsoft.Json": "10.0.1",
+          "Newtonsoft.Json": "10.0.3",
           "System.Diagnostics.Debug": "4.3.0",
           "System.Dynamic.Runtime": "4.3.0",
           "System.Linq": "4.3.0"
@@ -2069,7 +2085,7 @@
       "Microsoft.Extensions.Logging.EventSource/2.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "2.0.0",
-          "Newtonsoft.Json": "10.0.1"
+          "Newtonsoft.Json": "10.0.3"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.EventSource.dll": {}
@@ -2217,7 +2233,7 @@
       "Microsoft.IdentityModel.Tokens/5.1.4": {
         "dependencies": {
           "Microsoft.IdentityModel.Logging": "1.1.4",
-          "Newtonsoft.Json": "10.0.1",
+          "Newtonsoft.Json": "10.0.3",
           "System.Collections": "4.3.0",
           "System.Diagnostics.Tools": "4.3.0",
           "System.Runtime": "4.3.0",
@@ -2254,7 +2270,7 @@
       "Microsoft.Rest.ClientRuntime/2.3.8": {
         "dependencies": {
           "NETStandard.Library": "2.0.0",
-          "Newtonsoft.Json": "10.0.1"
+          "Newtonsoft.Json": "10.0.3"
         },
         "runtime": {
           "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.dll": {}
@@ -2267,7 +2283,7 @@
         "dependencies": {
           "Microsoft.Rest.ClientRuntime": "2.3.8",
           "NETStandard.Library": "2.0.0",
-          "Newtonsoft.Json": "10.0.1"
+          "Newtonsoft.Json": "10.0.3"
         },
         "runtime": {
           "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll": {}
@@ -2317,33 +2333,30 @@
           "ref/netstandard2.0/Microsoft.Win32.Registry.dll": {}
         }
       },
-      "Newtonsoft.Json/10.0.1": {
+      "MySqlConnector/0.26.4": {
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Data.Common": "4.3.0",
+          "System.Diagnostics.Process": "4.3.0",
+          "System.Net.NameResolution": "4.3.0",
+          "System.Net.Security": "4.3.0",
+          "System.Security.Cryptography.Algorithms": "4.3.0",
+          "System.Threading.Tasks.Extensions": "4.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MySqlConnector.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/MySqlConnector.dll": {}
+        }
+      },
+      "Newtonsoft.Json/10.0.3": {
         "dependencies": {
           "Microsoft.CSharp": "4.4.0",
-          "System.Collections": "4.3.0",
+          "NETStandard.Library": "2.0.0",
           "System.ComponentModel.TypeConverter": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Dynamic.Runtime": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Linq.Expressions": "4.3.0",
-          "System.ObjectModel": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Extensions": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Numerics": "4.3.0",
           "System.Runtime.Serialization.Formatters": "4.3.0",
           "System.Runtime.Serialization.Primitives": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Text.Encoding.Extensions": "4.3.0",
-          "System.Text.RegularExpressions": "4.3.0",
-          "System.Threading": "4.3.0",
-          "System.Threading.Tasks": "4.3.0",
-          "System.Xml.ReaderWriter": "4.3.0",
-          "System.Xml.XDocument": "4.3.0",
           "System.Xml.XmlDocument": "4.3.0"
         },
         "runtime": {
@@ -2356,13 +2369,168 @@
       "Newtonsoft.Json.Bson/1.0.1": {
         "dependencies": {
           "NETStandard.Library": "2.0.0",
-          "Newtonsoft.Json": "10.0.1"
+          "Newtonsoft.Json": "10.0.3"
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         },
         "compile": {
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
+        }
+      },
+      "Pomelo.AntiXss/2.0.0-preview2-CI10041": {
+        "dependencies": {
+          "Pomelo.HtmlAgilityPack": "2.0.0-preview2-CI10041"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pomelo.AntiXss.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/Pomelo.AntiXss.dll": {}
+        }
+      },
+      "Pomelo.AspNetCore.AntiXSS/2.0.0-preview2-CI10041": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.0.0",
+          "Microsoft.AspNetCore.Mvc": "2.0.0",
+          "Microsoft.EntityFrameworkCore": "2.0.0",
+          "Pomelo.AntiXss": "2.0.0-preview2-CI10041",
+          "Pomelo.AspNetCore.Common": "2.0.0-preview2-CI10041"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pomelo.AspNetCore.AntiXSS.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/Pomelo.AspNetCore.AntiXSS.dll": {}
+        }
+      },
+      "Pomelo.AspNetCore.Common/2.0.0-preview2-CI10041": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http": "2.0.0",
+          "Microsoft.AspNetCore.Mvc": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pomelo.AspNetCore.Common.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/Pomelo.AspNetCore.Common.dll": {}
+        }
+      },
+      "Pomelo.AspNetCore.Extensions/2.0.0-preview2-CI10041": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.0.0",
+          "Microsoft.AspNetCore.Mvc": "2.0.0",
+          "Microsoft.Extensions.Configuration.Json": "2.0.0",
+          "Pomelo.AspNetCore.AntiXSS": "2.0.0-preview2-CI10041",
+          "Pomelo.AspNetCore.Common": "2.0.0-preview2-CI10041",
+          "Pomelo.AspNetCore.Localization": "2.0.0-preview2-CI10041",
+          "Pomelo.Extensions.Common": "2.0.0-preview2-CI10041",
+          "Pomelo.Marked": "2.0.0-preview2-CI10041",
+          "Pomelo.Net.Smtp": "2.0.0-preview2-CI10041",
+          "System.Security.Cryptography.Algorithms": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pomelo.AspNetCore.Extensions.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/Pomelo.AspNetCore.Extensions.dll": {}
+        }
+      },
+      "Pomelo.AspNetCore.Localization/2.0.0-preview2-CI10041": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http": "2.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.0.0",
+          "Microsoft.Extensions.Caching.Memory": "2.0.0",
+          "Newtonsoft.Json": "10.0.3",
+          "Pomelo.AspNetCore.Common": "2.0.0-preview2-CI10041",
+          "System.Globalization": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pomelo.AspNetCore.Localization.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/Pomelo.AspNetCore.Localization.dll": {}
+        }
+      },
+      "Pomelo.EntityFrameworkCore.MySql/2.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "2.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "2.0.0",
+          "Microsoft.Extensions.Logging.Console": "2.0.0",
+          "MySqlConnector": "0.26.4",
+          "Pomelo.JsonObject": "1.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pomelo.EntityFrameworkCore.MySql.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/Pomelo.EntityFrameworkCore.MySql.dll": {}
+        }
+      },
+      "Pomelo.Extensions.Common/2.0.0-preview2-CI10041": {
+        "dependencies": {
+          "System.Diagnostics.Process": "4.3.0",
+          "System.IO.Compression": "4.3.0",
+          "System.Net.Http": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Security.Cryptography.Algorithms": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pomelo.Extensions.Common.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/Pomelo.Extensions.Common.dll": {}
+        }
+      },
+      "Pomelo.HtmlAgilityPack/2.0.0-preview2-CI10041": {
+        "dependencies": {
+          "System.Diagnostics.TraceSource": "4.3.0",
+          "System.Net.Http": "4.3.0",
+          "System.Xml.XPath": "4.3.0",
+          "System.Xml.XPath.XmlDocument": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pomelo.HtmlAgilityPack.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/Pomelo.HtmlAgilityPack.dll": {}
+        }
+      },
+      "Pomelo.JsonObject/1.1.1": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Pomelo.JsonObject.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/Pomelo.JsonObject.dll": {}
+        }
+      },
+      "Pomelo.Marked/2.0.0-preview2-CI10041": {
+        "runtime": {
+          "lib/netstandard2.0/Pomelo.Marked.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/Pomelo.Marked.dll": {}
+        }
+      },
+      "Pomelo.Net.Smtp/2.0.0-preview2-CI10041": {
+        "dependencies": {
+          "Microsoft.AspNetCore.StaticFiles": "2.0.0",
+          "Pomelo.AspNetCore.Common": "2.0.0-preview2-CI10041",
+          "Pomelo.Extensions.Common": "2.0.0-preview2-CI10041",
+          "System.Net.Http": "4.3.0",
+          "System.Net.Security": "4.3.0",
+          "System.Net.Sockets": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pomelo.Net.Smtp.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/Pomelo.Net.Smtp.dll": {}
         }
       },
       "Remotion.Linq/2.1.1": {
@@ -2743,6 +2911,18 @@
           "System.Text.Encoding": "4.3.0"
         }
       },
+      "System.Data.Common/4.3.0": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading.Tasks": "4.3.0"
+        }
+      },
       "System.Data.SqlClient/4.4.0": {
         "dependencies": {
           "Microsoft.Win32.Registry": "4.4.0",
@@ -2803,6 +2983,45 @@
           }
         }
       },
+      "System.Diagnostics.Process/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0",
+          "Microsoft.Win32.Primitives": "4.3.0",
+          "Microsoft.Win32.Registry": "4.4.0",
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.IO.FileSystem": "4.3.0",
+          "System.IO.FileSystem.Primitives": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.Handles": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Text.Encoding": "4.3.0",
+          "System.Text.Encoding.Extensions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Tasks": "4.3.0",
+          "System.Threading.Thread": "4.3.0",
+          "System.Threading.ThreadPool": "4.3.0",
+          "runtime.native.System": "4.3.0"
+        },
+        "runtimeTargets": {
+          "runtime/linux/lib/_._": {
+            "rid": "linux",
+            "assetType": "runtime"
+          },
+          "runtime/osx/lib/_._": {
+            "rid": "osx",
+            "assetType": "runtime"
+          },
+          "runtime/win/lib/_._": {
+            "rid": "win",
+            "assetType": "runtime"
+          }
+        }
+      },
       "System.Diagnostics.StackTrace/4.3.0": {
         "dependencies": {
           "System.IO.FileSystem": "4.3.0",
@@ -2816,6 +3035,29 @@
           "Microsoft.NETCore.Platforms": "2.0.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Diagnostics.TraceSource/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0",
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "runtime.native.System": "4.3.0"
+        },
+        "runtimeTargets": {
+          "runtime/unix/lib/_._": {
+            "rid": "unix",
+            "assetType": "runtime"
+          },
+          "runtime/win/lib/_._": {
+            "rid": "win",
+            "assetType": "runtime"
+          }
         }
       },
       "System.Diagnostics.Tracing/4.3.0": {
@@ -3780,11 +4022,31 @@
           "System.Xml.XPath": "4.3.0"
         }
       },
+      "System.Xml.XPath.XmlDocument/4.3.0": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Xml.ReaderWriter": "4.3.0",
+          "System.Xml.XPath": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
+        }
+      },
       "WindowsAzure.Storage/8.1.4": {
         "dependencies": {
           "Microsoft.Data.OData": "5.8.2",
           "NETStandard.Library": "2.0.0",
-          "Newtonsoft.Json": "10.0.1",
+          "Newtonsoft.Json": "10.0.3",
           "System.Spatial": "5.8.2"
         },
         "runtime": {
@@ -4727,6 +4989,13 @@
       "path": "microsoft.entityframeworkcore.tools/2.0.0",
       "hashPath": "microsoft.entityframeworkcore.tools.2.0.0.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore.Tools.DotNet/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TXfd6BVR0bRpVwEM24fJIpE3q3AiPHHgbeY4nnbXez9T6sJk7OSrsuhPmiF7wLPI7wpZQrpj3avyrcaE1v3yow==",
+      "path": "microsoft.entityframeworkcore.tools.dotnet/2.0.0",
+      "hashPath": "microsoft.entityframeworkcore.tools.dotnet.2.0.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.Caching.Abstractions/2.0.0": {
       "type": "package",
       "serviceable": true,
@@ -5112,12 +5381,19 @@
       "path": "microsoft.win32.registry/4.4.0",
       "hashPath": "microsoft.win32.registry.4.4.0.nupkg.sha512"
     },
-    "Newtonsoft.Json/10.0.1": {
+    "MySqlConnector/0.26.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ebWzW9j2nwxQeBo59As2TYn7nYr9BHicqqCwHOD1Vdo+50HBtLPuqdiCYJcLdTRknpYis/DSEOQz5KmZxwrIAg==",
-      "path": "newtonsoft.json/10.0.1",
-      "hashPath": "newtonsoft.json.10.0.1.nupkg.sha512"
+      "sha512": "sha512-jJ8whR/B6X1qG5jHXVDR+bTwnNxOAGBmy6qiEv8YA7MeXnTkNBegWDfvCH1/RJJYzGVbNS40VaHQv6Tqbo48gA==",
+      "path": "mysqlconnector/0.26.4",
+      "hashPath": "mysqlconnector.0.26.4.nupkg.sha512"
+    },
+    "Newtonsoft.Json/10.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wBM7i7i3U2WX0ecor4zdVGvgrwFUjuigBoHKiL+nH39fCOpCPjBY3RDqJM32edvdyTAVdjzlccHsg41+/+zpSA==",
+      "path": "newtonsoft.json/10.0.3",
+      "hashPath": "newtonsoft.json.10.0.3.nupkg.sha512"
     },
     "Newtonsoft.Json.Bson/1.0.1": {
       "type": "package",
@@ -5125,6 +5401,83 @@
       "sha512": "sha512-5PYT/IqQ+UK31AmZiSS102R6EsTo+LGTSI8bp7WAUqDKaF4wHXD8U9u4WxTI1vc64tYi++8p3dk3WWNqPFgldw==",
       "path": "newtonsoft.json.bson/1.0.1",
       "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
+    },
+    "Pomelo.AntiXss/2.0.0-preview2-CI10041": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-scpCdwjpslBWaqGvqHEjZxQTJYpSkKdfJpENFfSB/NmgwxNsTY7Cm7MOI4yuceZcOIIX5Zyf+eBGZHUM2Klkpw==",
+      "path": "pomelo.antixss/2.0.0-preview2-ci10041",
+      "hashPath": "pomelo.antixss.2.0.0-preview2-ci10041.nupkg.sha512"
+    },
+    "Pomelo.AspNetCore.AntiXSS/2.0.0-preview2-CI10041": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uF28hvNvPymM7dVycNjIm8LGcLs77m3qPKwxb+/PnU05iOuvNG+1TWtViHIYR80BkoTvIqQSKCW406ytOGzvLA==",
+      "path": "pomelo.aspnetcore.antixss/2.0.0-preview2-ci10041",
+      "hashPath": "pomelo.aspnetcore.antixss.2.0.0-preview2-ci10041.nupkg.sha512"
+    },
+    "Pomelo.AspNetCore.Common/2.0.0-preview2-CI10041": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g4glZT2tWSiQ0DO5+ih+I92YOr5J2cmPu5nZW9aJchIQ0PGXREPz1somy/MmDC3r3jQQperJvByJlIzT3rWxNw==",
+      "path": "pomelo.aspnetcore.common/2.0.0-preview2-ci10041",
+      "hashPath": "pomelo.aspnetcore.common.2.0.0-preview2-ci10041.nupkg.sha512"
+    },
+    "Pomelo.AspNetCore.Extensions/2.0.0-preview2-CI10041": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bh8MQU/Lmo7o39AtsNcEBiVgr77w3kcY1oYk0vVTf9usoo8hJ5rZJ/bq2Cyx2S5vZ6Y+dDpYD+I8po4H/tRkag==",
+      "path": "pomelo.aspnetcore.extensions/2.0.0-preview2-ci10041",
+      "hashPath": "pomelo.aspnetcore.extensions.2.0.0-preview2-ci10041.nupkg.sha512"
+    },
+    "Pomelo.AspNetCore.Localization/2.0.0-preview2-CI10041": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tiO05Y0r7plvObO0CWPq9uviEUjZfIv9nMda4dEI41J1QeJbjlfmV48GS4Z2PkXtXHfYpvPqxA9xk922E9ydvA==",
+      "path": "pomelo.aspnetcore.localization/2.0.0-preview2-ci10041",
+      "hashPath": "pomelo.aspnetcore.localization.2.0.0-preview2-ci10041.nupkg.sha512"
+    },
+    "Pomelo.EntityFrameworkCore.MySql/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+13BZXxGQ4E/fRXj8JNo2ifmJkEdM5pSve5HNLdrGe/IQ/6MpGsbcqpAV8eDRE11E3IvDbqnHXfOQcI6rr7LdQ==",
+      "path": "pomelo.entityframeworkcore.mysql/2.0.0",
+      "hashPath": "pomelo.entityframeworkcore.mysql.2.0.0.nupkg.sha512"
+    },
+    "Pomelo.Extensions.Common/2.0.0-preview2-CI10041": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yD+dmvGBRYlfx+LiDTGV6USCuVovhSSE0H7a13HxZzjy2QitOs63kYua09Aa1FvY0uQAWdhQG0ZSFS3VlWenHQ==",
+      "path": "pomelo.extensions.common/2.0.0-preview2-ci10041",
+      "hashPath": "pomelo.extensions.common.2.0.0-preview2-ci10041.nupkg.sha512"
+    },
+    "Pomelo.HtmlAgilityPack/2.0.0-preview2-CI10041": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qiOrJOmO0ijlDd06bY3SJ9UAhkp8kVEUz3JhPZ6qQWaQNK2P6XtRbCrsusxXXZ+roghCh07zzS7TO3srcaSYZA==",
+      "path": "pomelo.htmlagilitypack/2.0.0-preview2-ci10041",
+      "hashPath": "pomelo.htmlagilitypack.2.0.0-preview2-ci10041.nupkg.sha512"
+    },
+    "Pomelo.JsonObject/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-erkYG/OW1LloSwDFGeS9MvVjy1FLmaV3k8GK/GMR8D3sSDEylZogoLdLiaOFc92+zTen92rG6XGiioNacSlg0A==",
+      "path": "pomelo.jsonobject/1.1.1",
+      "hashPath": "pomelo.jsonobject.1.1.1.nupkg.sha512"
+    },
+    "Pomelo.Marked/2.0.0-preview2-CI10041": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TcYvqR8Xs5467ZjHnVS6NJkRb01Tmhv/SWR8MMa1N6YMRY1GiqxLiDoxkPTGi3vfyARoarVHG66qb4LUs5/Qzg==",
+      "path": "pomelo.marked/2.0.0-preview2-ci10041",
+      "hashPath": "pomelo.marked.2.0.0-preview2-ci10041.nupkg.sha512"
+    },
+    "Pomelo.Net.Smtp/2.0.0-preview2-CI10041": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2uRSrzDhgqhQ53tj/uVfGqwvvSF95FoiXousyCu0sET+bVmM2Xl2Vnfnbcsv58dPYeKK5lQHQprxcwsRIdoN7Q==",
+      "path": "pomelo.net.smtp/2.0.0-preview2-ci10041",
+      "hashPath": "pomelo.net.smtp.2.0.0-preview2-ci10041.nupkg.sha512"
     },
     "Remotion.Linq/2.1.1": {
       "type": "package",
@@ -5413,6 +5766,13 @@
       "path": "system.console/4.3.0",
       "hashPath": "system.console.4.3.0.nupkg.sha512"
     },
+    "System.Data.Common/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-h7dSohGT4t+NSKgeKHMXSuAl/zhcCCtjj7KHWgyntEvTTLYl5P0McowL6Q76uXJAkfkUIVaWfNaEFnTYHmlXFQ==",
+      "path": "system.data.common/4.3.0",
+      "hashPath": "system.data.common.4.3.0.nupkg.sha512"
+    },
     "System.Data.SqlClient/4.4.0": {
       "type": "package",
       "serviceable": true,
@@ -5448,6 +5808,13 @@
       "path": "system.diagnostics.fileversioninfo/4.3.0",
       "hashPath": "system.diagnostics.fileversioninfo.4.3.0.nupkg.sha512"
     },
+    "System.Diagnostics.Process/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fMEJMbUbRUTE6PB43O9bZE2i5TngVN6RcqSQwycQbNBZnw6KVVTCNNv4F7BLtRknzRKbD+pRPeBMBYPgEev26A==",
+      "path": "system.diagnostics.process/4.3.0",
+      "hashPath": "system.diagnostics.process.4.3.0.nupkg.sha512"
+    },
     "System.Diagnostics.StackTrace/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -5461,6 +5828,13 @@
       "sha512": "sha512-ABDnLrx+t4KElUlz/9OV0J9h7wFuUNigavPfUr2WUJo/s3UCtzRCWaFPev3d6OW8x7293046sdxgqyvXkOiH7Q==",
       "path": "system.diagnostics.tools/4.3.0",
       "hashPath": "system.diagnostics.tools.4.3.0.nupkg.sha512"
+    },
+    "System.Diagnostics.TraceSource/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VnYp1NxGx8Ww731y2LJ1vpfb/DKVNKEZ8Jsh5SgQTZREL/YpWRArgh9pI8CDLmgHspZmLL697CaLvH85qQpRiw==",
+      "path": "system.diagnostics.tracesource/4.3.0",
+      "hashPath": "system.diagnostics.tracesource.4.3.0.nupkg.sha512"
     },
     "System.Diagnostics.Tracing/4.3.0": {
       "type": "package",
@@ -5972,6 +6346,13 @@
       "sha512": "sha512-jw9oHHEIVW53mHY9PgrQa98Xo2IZ0ZjrpdOTmtvk+Rvg4tq7dydmxdNqUvJ5YwjDqhn75mBXWttWjiKhWP53LQ==",
       "path": "system.xml.xpath.xdocument/4.3.0",
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
+    },
+    "System.Xml.XPath.XmlDocument/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A/uxsWi/Ifzkmd4ArTLISMbfFs6XpRPsXZonrIqyTY70xi8t+mDtvSM5Os0RqyRDobjMBwIDHDL4NOIbkDwf7A==",
+      "path": "system.xml.xpath.xmldocument/4.3.0",
+      "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
     },
     "WindowsAzure.Storage/8.1.4": {
       "type": "package",

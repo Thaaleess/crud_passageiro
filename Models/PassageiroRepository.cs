@@ -1,24 +1,24 @@
 using System.Collections.Generic;
+using System.Linq;
 
 namespace crud_passageiro.Models
 {
-    public class PassageiroRepository
+    public class PassageiroRepository : IPassageiroRepository
     {
-        public static List<Passageiro> passageiros = new List<Passageiro>();
-    
-        public PassageiroRepository()
-        {
+        private DataContext context;
 
+        public PassageiroRepository(DataContext context){
+            this.context = context;
         }
 
-        public void Create(Passageiro passageiro)
-        {
-            passageiros.Add(passageiro);
-
+        public void Create(Passageiro passageiro){
+            context.Passageiros.Add(passageiro);
+            context.SaveChanges();
         }
-        public void Delete(int id)
-        {
-            passageiros.Remove(passageiros.Find(x=>x.id == id));
+
+        public void Delete(int id){
+            context.Passageiros.Remove(GetById(id));
+            context.SaveChanges();
         }
 
         public void Update(Passageiro passageiro){
@@ -26,14 +26,12 @@ namespace crud_passageiro.Models
             Create(passageiro);
         }
 
-        public Passageiro GetById(int id)
-        {
-            return passageiros.Find(x=>x.id == id);
+        public Passageiro GetById(int id){
+            return context.Passageiros.SingleOrDefault(x=>x.id == id);
         }
 
-        public List<Passageiro> GetAll()
-        {
-            return passageiros;
+        public List<Passageiro> GetAll(){
+            return context.Passageiros.ToList();
         }
     }
 }
